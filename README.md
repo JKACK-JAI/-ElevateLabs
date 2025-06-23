@@ -1,9 +1,9 @@
-# -ElevateLabs
+# /ElevateLabs/
 
 # Cyber Security Internship - Task 1
 
 ## Task Title:
-Scan Your Local Network for Open Ports**
+Scan Your Local Network for Open Ports
 
 ## Objective:
 To discover open ports on devices in the local network using `Nmap` and analyze their exposure.
