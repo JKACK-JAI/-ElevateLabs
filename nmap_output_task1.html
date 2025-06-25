@@ -21,3 +21,25 @@ All 1000 scanned ports on 192.168.1.8 are in ignored states.
 Not shown: 1000 closed tcp ports (reset)
 
 Nmap done: 256 IP addresses (3 hosts up) scanned in 14.51 seconds
+
+
+## 📘 Task Explanation:
+
+The purpose of this task is to perform **network reconnaissance** by scanning the local network to discover **active devices** and identify any **open ports** that could expose services to potential attackers.
+
+To do this, I used the **Nmap tool**, which is widely used in cybersecurity for mapping networks, identifying hosts, and scanning ports.
+
+### Steps I Followed:
+1. **Identified my local network IP range** using `ip a` (Linux) to find the subnet, e.g., `192.168.1.0/24`.
+2. **Ran a TCP SYN scan** using:
+   ```bash
+   sudo nmap -sS 192.168.1.0/24
+3. Noted the results: I found 3 active devices. One of them (the router) had port 80 and 443 open (used for HTTP and HTTPS). Other devices had all ports closed.
+4. Analyzed security exposure: Open ports mean the device is listening for incoming connections. If unused, these can become entry points for attackers.
+5. Saved scan result to nmap_output_task1.txt and created a README.md to document everything.
+
+
+Why This Task Matters:
+It helps me understand how attackers or penetration testers discover systems and services in a network.
+
+I learned how to use scanning tools ethically and how to interpret scan results.
