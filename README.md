@@ -22,11 +22,11 @@ sudo nmap -sS 192.168.1.0/24
 
  **Analyze a Phishing Email Sampl**
 
- #Objective:
+ # Objective:
 Simulate a real-world phishing attack using social engineering techniques to understand how attackers craft and deliver fake emails, host phishing pages, and collect sensitive user data — purely for ethical and educational purposes.
 
 🛠️ What i Did in This Task:
-#Created a Netflix-Themed Phishing Email
+# Created a Netflix-Themed Phishing Email
 Designed a realistic HTML email mimicking a Netflix account suspension alert.
 
 Included official branding such as the Netflix logo, color palette, and formatting.
@@ -35,7 +35,7 @@ Added a “Verify Account” button with a hover URL masked as:
 
 https://www.netflix.com/account/verify
 
-#Tools Used:
+# Tools Used:
 
 -Inline CSS for email compatibility
 
@@ -43,7 +43,7 @@ https://www.netflix.com/account/verify
 
 -Social Engineer Toolkit (SET) for testing email delivery
 
-#Hosted a Phishing Page
+# Hosted a Phishing Page
 Cloned Netflix’s login UI using HTML/CSS
 
 Hosted the fake page locally using:
@@ -53,20 +53,20 @@ Hosted the fake page locally using:
 
 --cloudflared tunnel --url http://localhost:8000-- 
 
-#Outcome:
+# Outcome:
 Victims visiting the phishing link were presented with a fully functional, fake Netflix login interface.
 
-#Generated Phishing Link Using MIP22 Tool
+# Generated Phishing Link Using MIP22 Tool
 Used the MIP22 tool to cloak the raw Cloudflare link with a cleaner, more deceptive domain:
 
 **http://collar-comparable-patrick-astrology.trycloudflare.com**
 
 This enhanced believability and helped avoid detection by spam filters or URL previews.
 
-#Advantage:
+# Advantage:
 MIP22 generated a custom subdomain to make the phishing link look safe and legitimate.
 
-#Captured Victim Credentials
+# Captured Victim Credentials
 Inputs from the phishing form (email/phone and password) were collected via a backend script.
 
 Optional fingerprinting could capture:
@@ -79,7 +79,7 @@ Browser
 
 Date/time
 
-#Logged To:
+# Logged To:
 
 data.txt — for credentials
 
